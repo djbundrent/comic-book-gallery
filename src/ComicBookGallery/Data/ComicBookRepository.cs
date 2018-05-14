@@ -61,6 +61,11 @@ namespace ComicBookGallery.Data
             }
         };
 
+        public ComicBook[] GetComicBooks()
+        {
+            return _comicBooks;
+        }
+
         public ComicBook GetComicBook(int Id)
         {
             ComicBook comicBookToReturn = null;
@@ -72,7 +77,6 @@ namespace ComicBookGallery.Data
                     comicBookToReturn = comicBook;
                     break;
                 }
-
             }
 
             return comicBookToReturn;
